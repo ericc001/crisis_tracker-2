@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet'  type='text/css'>
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+    <title>CrisisTracker</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white" >
+      <a class="navbar-brand" style="font-family:pt-serif;" href="#">CrisisTracker</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Economische groei</a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Werkloosheid</a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Inflatie</a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Huizenmarkt</a>
+      </li>
+
+
+    </ul>
+        <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">FAQ</a>
+      </li>
+    </ul>
+  </div>
+    </div>
+</nav>
+<div class="bg-white">
+<div class="container bg-white">
+    <br><br><br><br>
+    <h3 > Economische groei </h3>
+    <br>
+    <p> De economische groei wordt gemeten aan de hand van het bruto binnenlands product. Dit is, afhankelijk van de gekozen benadering, de optelsom van de totale productie, bestedingen of het inkomen van Nederland. De totale waarde van het bbp wordt bepaald met behulp van het systeem van nationale rekeningen. De toename van de waarde van het bruto binnenlands product (bbp) kan worden gecorrigeerd voor inflatie. De uitkomst hiervan wordt volumegroei genoemd en wordt gebruikt als een indicatie van de reële toename van de materiële welvaart, oftewel de economische groei.
+    <a href="#" style="text-info"> Less verder op de website van het cbs</a> </p>
+
+
+    <br>
+
+
+
+    <div class="row">
+        <div class="col-md-12 offset-md-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Verwachte economische groei  </h5>
+                <h7 class="card-subtitle mb-2 text-muted"> BBP Groei, Procentueel, Kwartaal-op-Kwartaal </h7>
+                <p class="card-text">
+                    <br>
+                    <br>
+                    <canvas id="myChart" width="400" height="100"></canvas>
+                    <div id="accordion">
+                  <br>
+                  <p>
+                      <a class="text-info text-uppercase font-light-weight" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Uitleg
+                      </a>
+                          </p>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <p>
+                    Verwachte economische groei is de verwachting van het RTE-algoritme. Dit algoritme geeft een verwachting van
+                    de economische groei op basis van een grote hoeveelheid aan datapunten, afkomstig van officiele bronnen zoals
+                    het CBS, maar ook van niet-traditionele bronnen.
+                      </p>
+
+        </div>
+                </p>
+              </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Ontwikkeling economische groei </h5>
+                <h7 class="card-subtitle mb-2 text-muted"> BBP Groei, Procentueel, Kwartaal-op-Kwartaal </h7>
+                <p class="card-text">
+                    <canvas id="myChart2" width="400" height="100"></canvas>
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Recente voorspellingen</h5>
+                <h7 class="card-subtitle mb-2 text-muted"> BBP Groei, Procentueel, Kwartaal-op-Kwartaal </h7>
+                <p class="card-text">
+                    <canvas id="myChart3" width="400" height="100"></canvas>
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<br><br><br>
+<nav class="navbar navbar-light bg-white">
+<div class="container">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Privacy Policy <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Terms of use</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"> </a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"> </a>
+      </li>
+
+    </ul>
+    <span class="navbar-text">
+      (C) 2020
+    </span>
+    </div>
+    <br><br><br>
+</nav>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+  <script>
+var ctx = document.getElementById('myChart2').getContext('2d');
+var myChart2 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+  <script>
+var ctx = document.getElementById('myChart3').getContext('2d');
+var myChart3 = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+  </body>
+</html>
